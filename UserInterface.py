@@ -148,6 +148,9 @@ class OpenWindow:
             except TclError:
                 pass
 
+
+
+
     def create_button(self, text, function):
         tk.Button(self.frame, text=text, width=10, command=lambda: function).pack()
 

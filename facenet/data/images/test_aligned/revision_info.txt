@@ -1,0 +1,7 @@
+arguments: C:/Users/venog/Desktop/IJS/IBB3/UserInterface.py
+--------------------
+tensorflow version: 1.7.0
+--------------------
+git hash: b'12efe89e3df50c6d42787d094fbcc15be7fb2860'
+--------------------
+b'diff --git a/UserInterface.py b/UserInterface.py\nindex dd0b56b..3781c96 100644\n--- a/UserInterface.py\n+++ b/UserInterface.py\n@@ -148,6 +148,9 @@ class OpenWindow:\n             except TclError:\n                 pass\n \n+\n+\n+\n     def create_button(self, text, function):\n         tk.Button(self.frame, text=text, width=10, command=lambda: function).pack()'

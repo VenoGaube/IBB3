@@ -1,4 +1,13 @@
 # How to run the script  
+
+##### Prerequisites
+
+1. Download the dataset and pickle file from:
+
+https://drive.google.com/drive/folders/1xah475_2zcMYdvg-wAEhJPRYO-uKMgfb?usp=sharing
+
+2. Put the dataset wherever you want (remember it's location)
+3. Put the pickle file named "my_classifier.pkl" into the IBB3/facenet/models folder (beside the 20170512-110547.pb file).  
   
 ##### As the interpreter we use Python 3.6.8, because it's compatible with the version of FaceNet and it's connected to the requirements.txt files.  
     
@@ -59,9 +68,13 @@ Lower or upper case doesn't matter since the program turns all strings into uppe
 
 
 ![alt text](docs/9.%20Korak.PNG)
+![alt text](docs/9.%20KorakB.PNG)
+![alt text](docs/9.%20KorakC.PNG)
+![alt text](docs/9.%20KorakD.PNG)
 
 After going through all the images and assigning all the faces a "name" the program
 will learn from the marked images and do it's own prediction on the remaining data, displaying
 the final result when finished.
 
 ![alt text](docs/10.%20Korak.PNG)
+![alt text](docs/10.%20Korak2.PNG)
