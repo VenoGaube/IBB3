@@ -1,5 +1,6 @@
 /venv
-facenet/data/images
+facenet/data/images/test_aligned
+facenet/data/images/test_raw
 facenet/models
 /results
 data.json
