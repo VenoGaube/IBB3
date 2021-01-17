@@ -1,7 +1,7 @@
 /venv
 facenet/data/images/test_aligned/gallery
 facenet/data/images/test_raw/gallery
-facenet/models
+facenet/models/20170512-110547.pb
 /results
 data.json
 /results_final

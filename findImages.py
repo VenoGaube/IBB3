@@ -93,6 +93,8 @@ def get_images():
     # User določi root directory
     root = tk.Tk()
     path = askdirectory(title='Select Folder')
+    if path == '':
+        exit(0)
     root.withdraw()
     pot = path
 
