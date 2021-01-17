@@ -180,11 +180,7 @@ def main(args):
                 encodings.append(ImageEncoding(paths[i], emb_array[i]))
 
             clusters = clustering.cluster_facial_encodings(encodings)
-            path_test_aligned = os.getcwd() + "\\facenet\\data\\images\\test_aligned\\gallery"
-            path_model = os.getcwd() + "\\facenet\\models\\20170512-110547.pb"
-            results_path = os.getcwd() + "\\results"
-            # arguments_dbscan = HDBSCANArguments(path_test_aligned, results_path, path_model)
-            # clusters = dbscan_cluster.main(arguments_dbscan)
+
             # set clusters
             for cluster in range(len(clusters)):
                 # if len(clusters[cluster]) < 5:
@@ -222,6 +218,8 @@ def main(args):
             config.result_path = results_path
 
             for i in range(len(clusters)):
+                if len(clusters[i]) < 10:
+                    continue
                 if len(clusters[i]) < 0:
                     for o in range(len(clusters[i])):
                         for j in range(len(config.data)):

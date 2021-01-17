@@ -178,7 +178,7 @@ class OpenWindow:
         counter_array = [0] * num_of_folders
 
         counter = 0
-        limit = 15
+        limit = 8
         j = 0
         i = 0
         for folder in Path(path).iterdir():
@@ -613,8 +613,6 @@ path_finder(pathlib.PurePath(os.getcwd()))
 
 delete_create()
 vse_slike = findImages.get_images()
-
-
 
 call_commands()
 # Create the root window
